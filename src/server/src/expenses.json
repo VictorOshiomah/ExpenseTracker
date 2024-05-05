@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "date": "4/29/2024",
+    "amount": "$10.10",
+    "category": "Entertainment",
+    "method": "Credit"
+  },
+  {
+    "id": 2,
+    "date": "4/30/2024",
+    "amount": "$50.11",
+    "category": "Food",
+    "method": "Debit"
+  },
+  {
+    "id": 3,
+    "date": "5/1/2024",
+    "amount": "$20.01",
+    "category": "Food",
+    "method": "Credit"
+  },
+  {
+    "id": 4,
+    "date": "5/5/2024",
+    "amount": "$45.82",
+    "category": "Miscellaneous",
+    "method": "Debit"
+  }
+]
