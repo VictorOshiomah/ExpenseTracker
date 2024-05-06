@@ -1,0 +1,74 @@
+.form {
+  display: grid;
+  place-items: center;
+  /* min-height: 100vh; */
+  margin-top: 1.5rem;
+  color: #23395d;
+  font-family: sans-serif;
+  margin-bottom: 4.2rem;
+}
+
+form {
+  background-color: lightgray;
+  width: 30%;
+  padding: 2rem 8rem 2rem 8rem;
+  margin-bottom: 0.5rem;
+}
+
+#header {
+  font-size: 50px;
+}
+
+form input {
+  gap: 3rem;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.form-group input[type="text"],
+.form-group input[type="date"],
+.form-group select {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: white;
+}
+
+.form-group1 {
+  margin-bottom: 1rem;
+}
+
+.form-payment {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.form-btn {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 10rem;
+}
+
+.form-btn button {
+  margin-right: 10px;
+  color: #23395d;
+  background-color: white;
+  border-radius: 0.1rem;
+  padding: 0.5rem 2rem 0.5rem 2rem;
+  border: 1px solid #23395d;
+  font-size: 12px;
+}
+
+#save-btn {
+  background-color: #23395d;
+  color: white;
+  padding: 0.5rem 3rem 0.5rem 3rem;
+}
