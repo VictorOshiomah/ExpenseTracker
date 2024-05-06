@@ -14,4 +14,8 @@ export class AppComponent {
     const selection = e.target.value;
     this.router.navigate([selection]);
   }
+
+  budgetDashboardOnClick() {
+    this.router.navigate(['/budget-dashboard'])
+  }
 }
