@@ -1,0 +1,19 @@
+footer ul {
+  display: flex;
+  background-color: lightgray;
+  list-style: none;
+  justify-content: center;
+  gap: 4rem;
+  padding: 10px;
+}
+
+footer ul li {
+  padding: 20px;
+  font-weight: bold;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+footer {
+  color: #23395d;
+}

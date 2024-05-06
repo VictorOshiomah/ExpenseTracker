@@ -1,0 +1,43 @@
+nav {
+  font-family: sans-serif;
+  color: #23395d;
+}
+
+.logo {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.main-nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 30rem;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 2.5rem;
+}
+
+#abt-us {
+  font-size: 18px;
+  padding-top: 5px;
+}
+
+select {
+  background-color: #23395d;
+  color: white;
+  font-size: 15px;
+  height: 30px;
+  border-radius: 0.2rem;
+}
+
+.nav-btn {
+  background-color: #23395d;
+  color: white;
+  border-radius: 0.2rem;
+  font-size: 15px;
+  padding: 4px 12px 4px 12px;
+}

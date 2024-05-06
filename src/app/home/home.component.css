@@ -1,0 +1,42 @@
+main {
+  font-family: sans-serif;
+  color: #23395d;
+}
+
+.hero {
+  text-align: center;
+  margin-top: 10rem;
+}
+
+.hero-title {
+  font-size: 28px;
+}
+
+.hero-p h3 {
+  font-size: 25px;
+  font-weight: lighter;
+}
+
+.benefits {
+  text-align: center;
+  margin-top: 8rem;
+  margin-bottom: 3.6rem;
+  padding-right: 3rem;
+}
+
+.ben-title h2 {
+  font-size: 35px;
+  padding-left: 3.5rem;
+}
+
+.ben-ex {
+  display: flex;
+  justify-content: space-around;
+  gap: 2rem;
+  margin-bottom: 2.5rem;
+}
+
+article p {
+  text-wrap: balance;
+  font-size: 18px;
+}
