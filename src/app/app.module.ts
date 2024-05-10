@@ -8,7 +8,9 @@ import { HomeComponent } from './home/home.component';
 import { ExpenseEntryComponent } from './expense-entry/expense-entry.component';
 import { FormsModule } from '@angular/forms';
 import { ExpenseTableComponent } from './expense-table/expense-table.component';
+import { HttpClientModule } from '@angular/common/http';
 import { BudgetDashboardComponent } from './budget-dashboard/budget-dashboard.component';
+
 
 @NgModule({
   declarations: [
@@ -19,7 +21,7 @@ import { BudgetDashboardComponent } from './budget-dashboard/budget-dashboard.co
     ExpenseTableComponent,
     BudgetDashboardComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, FormsModule],
+  imports: [BrowserModule, AppRoutingModule, FormsModule, HttpClientModule],
   providers: [],
   bootstrap: [AppComponent],
 })
