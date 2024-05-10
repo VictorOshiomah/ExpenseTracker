@@ -1,1 +1,28 @@
-<p>expense-table works!</p>
+
+  <div>This is working</div>
+<div>
+  <table>
+    <thead>
+    <tr>
+      <th>ID</th>
+      <th>Date</th>
+      <th>Amount</th>
+      <th>Category</th>
+      <th>Method</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let exp of expenses">
+      <td>{{ exp.id }}</td>
+      <td>{{ exp.date }}</td>
+      <td>{{ exp.amount }}</td>
+      <td>{{ exp.category }}</td>
+      <td>{{ exp.method }}</td>
+    </tr>
+    </tbody>
+  </table>
+</div>
+
+<div>
+  Here is the table component
+</div>
