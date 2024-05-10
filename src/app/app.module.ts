@@ -9,6 +9,8 @@ import { ExpenseEntryComponent } from './expense-entry/expense-entry.component';
 import { FormsModule } from '@angular/forms';
 import { ExpenseTableComponent } from './expense-table/expense-table.component';
 import { HttpClientModule } from '@angular/common/http';
+import { BudgetDashboardComponent } from './budget-dashboard/budget-dashboard.component';
+
 
 @NgModule({
   declarations: [
@@ -17,6 +19,7 @@ import { HttpClientModule } from '@angular/common/http';
     HomeComponent,
     ExpenseEntryComponent,
     ExpenseTableComponent,
+    BudgetDashboardComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule, HttpClientModule],
   providers: [],
