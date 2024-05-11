@@ -1,0 +1,14 @@
+.team-member {
+  background-color: #23395d;
+  color: white;
+  border-radius: 10px;
+  padding: 1rem;
+  margin-bottom: 3rem;
+  margin-left: 5rem;
+  margin-right: 5rem;
+
+}
+
+.team-member h1 {
+text-align: center;
+}
