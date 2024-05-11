@@ -10,7 +10,7 @@ const filePath = path.join(__dirname, "expenses.json");
 export interface Expense {
   id: number;
   date: string;
-  amount: string;
+  amount: number;
   category: string;
   method: string;
 }

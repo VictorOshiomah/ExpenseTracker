@@ -1,28 +1,23 @@
-
-  <div>This is working</div>
-<div>
-  <table>
+<div class="tbl-container">
+  <table class="expense-table">
     <thead>
     <tr>
-      <th>ID</th>
-      <th>Date</th>
-      <th>Amount</th>
-      <th>Category</th>
-      <th>Method</th>
+      <th class="tbl-header">ID</th>
+      <th class="tbl-header">Date</th>
+      <th class="tbl-header">Amount</th>
+      <th class="tbl-header">Category</th>
+      <th class="tbl-header">Method</th>
     </tr>
     </thead>
     <tbody>
-    <tr *ngFor="let exp of expenses">
-      <td>{{ exp.id }}</td>
-      <td>{{ exp.date }}</td>
-      <td>{{ exp.amount }}</td>
-      <td>{{ exp.category }}</td>
-      <td>{{ exp.method }}</td>
+    <tr class="tbl-row" *ngFor="let exp of expenses">
+      <td class="tbl-cell">{{ exp.id }}</td>
+      <td class="tbl-cell">{{ exp.date }}</td>
+      <td class="tbl-cell">{{ '$ ' + exp.amount }}</td>
+      <td class="tbl-cell">{{ exp.category }}</td>
+      <td class="tbl-cell">{{ exp.method }}</td>
     </tr>
     </tbody>
   </table>
 </div>
 
-<div>
-  Here is the table component
-</div>
