@@ -12,11 +12,6 @@ import {HttpClientModule} from "@angular/common/http";
 
 export class ExpenseTableComponent implements OnInit{
 
-  ID: number;
-  Date: string;
-  Amount: number;
-  Category: string;
-  Method: string;
   expenses: Expense[];
 
   constructor(public httpClient: HttpClient) {}

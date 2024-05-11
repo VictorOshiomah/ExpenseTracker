@@ -1,0 +1,44 @@
+.tbl-container{
+  font-family: sans-serif;
+  color: #23395d;
+  border-radius: 10px;
+  margin: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.expense-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+.tbl-container {
+  background-color: #23395d;
+  color: white;
+  font-weight: bold;
+  padding: 2rem;
+
+}
+
+.tbl-header {
+  color: white;
+  font-weight: bolder;
+  padding-bottom: 1rem;
+
+}
+
+.tbl-row {
+  border-bottom: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.tbl-cell {
+  padding: 1rem;
+}
+
+.tbl-row:hover{
+  background-color: #4D94DB;
+  color: black;
+}
