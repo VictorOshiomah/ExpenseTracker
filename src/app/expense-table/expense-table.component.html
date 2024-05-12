@@ -7,6 +7,7 @@
       <th class="tbl-header">Amount</th>
       <th class="tbl-header">Category</th>
       <th class="tbl-header">Method</th>
+      <th class="tbl-header">Actions</th>
     </tr>
     </thead>
     <tbody>
@@ -16,6 +17,9 @@
       <td class="tbl-cell">{{ '$ ' + exp.amount }}</td>
       <td class="tbl-cell">{{ exp.category }}</td>
       <td class="tbl-cell">{{ exp.method }}</td>
+      <td class="tbl-cell">
+        <button (click)="editExpense(exp.id)">Edit</button>
+      </td>
     </tr>
     </tbody>
   </table>

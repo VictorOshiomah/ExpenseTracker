@@ -1,0 +1,19 @@
+<div class="edit-container">
+  <form (ngSubmit)="updateExpense()">
+    <label>Date:</label>
+    <input type="text" [(ngModel)]="expenses.date" name="date" required>
+
+    <label>Amount:</label>
+    <input type="number" [(ngModel)]="expenses.amount" name="amount" required>
+
+    <label>Category:</label>
+    <input type="text" [(ngModel)]="expenses.category" name="category" required>
+
+    <label>Method:</label>
+    <input type="text" [(ngModel)]="expenses.method" name="method" required>
+
+    <button type="submit">Update Expense</button>
+    <button (click)="deleteExpense()">Delete Expense</button>
+  </form>
+
+</div>
