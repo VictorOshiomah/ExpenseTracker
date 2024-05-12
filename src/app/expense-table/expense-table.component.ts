@@ -1,8 +1,7 @@
-import {Component, Input, OnInit} from '@angular/core';
+import { Component, Input, OnInit} from '@angular/core';
 import {HttpClient} from "@angular/common/http";
 import {Expense} from "../../server/src";
-import {HttpClientModule} from "@angular/common/http";
-
+import {Router} from "@angular/router";
 
 @Component({
   selector: 'app-expense-table',
@@ -14,7 +13,8 @@ export class ExpenseTableComponent implements OnInit{
 
   expenses: Expense[];
 
-  constructor(public httpClient: HttpClient) {}
+
+  constructor(public httpClient: HttpClient, public router: Router) {}
 
   ngOnInit(): void {
     this.fetchExpenses();
@@ -23,10 +23,12 @@ export class ExpenseTableComponent implements OnInit{
   fetchExpenses(): void {
     this.httpClient.get<any[]>("http://localhost:3000")
       .subscribe(expenses => {
-        this.expenses = expenses;
-      });
+          this.expenses = expenses;
+        });
   }
 
-
+  editExpense(expenseId: number): void {
+    this.router.navigate(['/expense-edit', expenseId]);
+  }
 
 }

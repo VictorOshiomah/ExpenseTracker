@@ -32,6 +32,8 @@
 .tbl-row {
   border-bottom: 1px solid #ccc;
   border-radius: 5px;
+  transition: background-color .5s;
+
 }
 
 .tbl-cell {
@@ -41,4 +43,8 @@
 .tbl-row:hover{
   background-color: #4D94DB;
   color: black;
+}
+
+.tbl-cell:last-child button {
+  cursor: pointer;
 }

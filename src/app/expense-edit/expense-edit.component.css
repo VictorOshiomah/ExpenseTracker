@@ -1,0 +1,45 @@
+.edit-container {
+  font-family: sans-serif;
+  background-color: #f5f5f5;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  margin: 5rem auto;
+  padding: 2rem;
+  max-width: 600px;
+  box-shadow: 0 0 10px rgb(35, 57, 93);
+}
+
+.edit-container form {
+  width: 100%;
+}
+
+.edit-container label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.edit-container input {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+.edit-container button {
+display: block;
+  width: 50%;
+  padding: 0.5rem 0;
+  margin: 1rem auto;
+  background-color: #23395d;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color .5s;
+}
+
+.edit-container button:hover {
+  background-color: #4D94DB;
+}
