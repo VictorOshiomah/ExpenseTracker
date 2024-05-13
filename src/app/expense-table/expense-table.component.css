@@ -45,6 +45,11 @@
   color: black;
 }
 
-.tbl-cell:last-child button {
+.tbl-cell:last-child img {
   cursor: pointer;
+}
+
+.edit-icon{
+  width: 2rem;
+  height: 2rem;
 }

@@ -18,7 +18,7 @@
       <td class="tbl-cell">{{ exp.category }}</td>
       <td class="tbl-cell">{{ exp.method }}</td>
       <td class="tbl-cell">
-        <button (click)="editExpense(exp.id)">Edit</button>
+        <img class="edit-icon" [src]="'/assets/edit.png'" (click)="editExpense(exp.id)" alt="Edit icon. Attribution: https://www.flaticon.com/free-icons/edit">
       </td>
     </tr>
     </tbody>
