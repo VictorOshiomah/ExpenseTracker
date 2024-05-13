@@ -1,17 +1,25 @@
 <div class="edit-container">
   <form (ngSubmit)="updateExpense()">
     <label>Date:</label>
-    <input type="text" [(ngModel)]="expenses.date" name="date" required>
-
+    <input type="text" [(ngModel)]="expenses.date" name="date" #dateField="ngModel" required>
+    <div class="error-div">
+    <span *ngIf="!dateField.valid && saveUnsuccessful">Date is required</span>
+    </div>
     <label>Amount:</label>
-    <input type="number" [(ngModel)]="expenses.amount" name="amount" required>
-
+    <input type="number" [(ngModel)]="expenses.amount" name="amount" #amountField="ngModel" required>
+    <div class="error-div">
+    <span *ngIf="!amountField.valid && saveUnsuccessful">Amount is required</span>
+    </div>
     <label>Category:</label>
-    <input type="text" [(ngModel)]="expenses.category" name="category" required>
-
+    <input type="text" [(ngModel)]="expenses.category" name="category" #categoryField="ngModel" required>
+    <div class="error-div">
+    <span *ngIf="!categoryField.valid && saveUnsuccessful">Category is required</span>
+    </div>
     <label>Method:</label>
-    <input type="text" [(ngModel)]="expenses.method" name="method" required>
-
+    <input type="text" [(ngModel)]="expenses.method" name="method"  #methodField="ngModel" required>
+    <div class="error-div">
+    <span *ngIf="!methodField.valid && saveUnsuccessful">Method is required</span>
+    </div>
     <button type="submit">Update Expense</button>
     <button (click)="deleteExpense()">Delete Expense</button>
   </form>
