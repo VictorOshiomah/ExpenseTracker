@@ -15,6 +15,12 @@ nav {
   gap: 30rem;
 }
 
+.container{
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
 nav ul {
   list-style: none;
   display: flex;
@@ -42,4 +48,8 @@ select {
   border: 1px solid #23395d;
   font-size: 15px;
   padding: 4px 12px 4px 12px;
+}
+
+app-footer {
+  margin-top: auto;
 }

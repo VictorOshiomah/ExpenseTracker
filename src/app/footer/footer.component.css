@@ -5,6 +5,7 @@ footer ul {
   justify-content: center;
   gap: 4rem;
   padding: 10px;
+  margin: 0;
 }
 
 footer ul li {
