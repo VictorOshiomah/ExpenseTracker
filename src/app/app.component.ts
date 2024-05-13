@@ -19,8 +19,7 @@ export class AppComponent {
     this.router.navigate(['/budget-dashboard']);
   }
 
-  aboutUsOnClick(){
+  aboutUsOnClick() {
     this.router.navigate(['/about-us']);
   }
-
 }

@@ -13,7 +13,6 @@ import { BudgetDashboardComponent } from './budget-dashboard/budget-dashboard.co
 import { AboutUsComponent } from './about-us/about-us.component';
 import { ExpenseEditComponent } from './expense-edit/expense-edit.component';
 
-
 @NgModule({
   declarations: [
     AppComponent,
