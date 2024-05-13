@@ -43,3 +43,14 @@ display: block;
 .edit-container button:hover {
   background-color: #4D94DB;
 }
+
+.error-div{
+  display: flex;
+  justify-content: center;
+}
+
+.error-div span{
+  color: red;
+  padding: 0.5rem;
+}
+

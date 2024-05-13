@@ -11,6 +11,7 @@ import {HttpClient} from "@angular/common/http";
 export class ExpenseEditComponent {
   expenseId: number;
   expenses: Expense;
+  saveUnsuccessful: boolean = false;
 
   constructor(private route: ActivatedRoute, private httpClient: HttpClient, private router: Router) {}
 
@@ -29,6 +30,14 @@ export class ExpenseEditComponent {
   }
 
   updateExpense(): void {
+
+    if (!this.expenses.date || !this.expenses.amount || !this.expenses.category || !this.expenses.method) {
+      this.saveUnsuccessful = true;
+      return;
+    }
+
+    this.saveUnsuccessful = false;
+
     this.httpClient.put(`http://localhost:3000/${this.expenseId}`, this.expenses)
       .subscribe(() => {
         this.router.navigate(['/expense-table']);
