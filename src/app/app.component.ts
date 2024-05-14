@@ -12,7 +12,9 @@ export class AppComponent {
 
   onSelectChange(e: any) {
     const selection = e.target.value;
+
     this.router.navigate([selection]);
+    e.target.value = '';
   }
 
   budgetDashboardOnClick() {

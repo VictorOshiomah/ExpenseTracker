@@ -1,22 +1,22 @@
 <div class="container">
-<nav class="main-nav">
-  <div class="logo">ExpenseTracker</div>
-  <div>
-    <ul>
-      <button class="nav-btn" (click)="aboutUsOnClick()">About Us</button>
-      <li>
-        <select (change)="onSelectChange($event)" name="" id="">
-          <option value="">Expenses</option>
-          <option value="expense-entry">Expense Entry</option>
-          <option value="expense-table">Expense Table</option>
-        </select>
-      </li>
-      <button class="nav-btn" (click)="budgetDashboardOnClick()">
-        Budget Dashboard
-      </button>
-    </ul>
-  </div>
-</nav>
-<router-outlet />
-<app-footer></app-footer>
+  <nav class="main-nav">
+    <div class="logo">ExpenseTracker</div>
+    <div>
+      <ul>
+        <button class="nav-btn" (click)="aboutUsOnClick()">About Us</button>
+        <li>
+          <select (change)="onSelectChange($event)">
+            <option value="">Expenses</option>
+            <option value="expense-entry">Expense Entry</option>
+            <option value="expense-table">Expense Table</option>
+          </select>
+        </li>
+        <button class="nav-btn" (click)="budgetDashboardOnClick()">
+          Budget Dashboard
+        </button>
+      </ul>
+    </div>
+  </nav>
+  <router-outlet />
+  <app-footer></app-footer>
 </div>
