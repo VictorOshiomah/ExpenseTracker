@@ -1,11 +1,12 @@
 main {
   font-family: sans-serif;
   color: #23395d;
+  text-align: center;
 }
 
 .hero {
   text-align: center;
-  margin-top: 10rem;
+  margin-top: 8rem;
 }
 
 .hero-title {
@@ -18,7 +19,6 @@ main {
 }
 
 .benefits {
-  text-align: center;
   margin-top: 8rem;
   margin-bottom: 3.6rem;
   padding-right: 3rem;
@@ -31,9 +31,15 @@ main {
 
 .ben-ex {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   gap: 2rem;
+  margin-top: 4rem;
   margin-bottom: 2.5rem;
+}
+
+.home-icon{
+  width: 5rem;
+  height: 5rem;
 }
 
 article p {
