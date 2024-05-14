@@ -6,6 +6,7 @@ nav {
 .logo {
   font-size: 18px;
   font-weight: bold;
+  cursor: pointer;
 }
 
 .main-nav {
@@ -25,6 +26,10 @@ nav ul {
   list-style: none;
   display: flex;
   gap: 2.5rem;
+}
+
+nav option{
+  text-align: center;
 }
 
 #abt-us {
@@ -48,6 +53,7 @@ select {
   border: 1px solid #23395d;
   font-size: 15px;
   padding: 4px 12px 4px 12px;
+  cursor: pointer;
 }
 
 app-footer {

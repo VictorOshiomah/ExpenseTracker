@@ -24,4 +24,8 @@ export class AppComponent {
   aboutUsOnClick() {
     this.router.navigate(['/about-us']);
   }
+
+  homeOnClick() {
+    this.router.navigate(['/home']);
+  }
 }
