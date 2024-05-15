@@ -29,7 +29,6 @@ export class BudgetDashboardComponent implements OnInit {
   }
 
   renderGraphs(): void {
-
     const combinedData = {};
     this.expenses.forEach((expense) => {
       if (combinedData[expense.category]) {
@@ -48,11 +47,13 @@ export class BudgetDashboardComponent implements OnInit {
       }
     });
 
-    this.expenses.sort((a, b) => new Date(a.date).getTime() - new Date(b.date).getTime());
+    this.expenses.sort(
+      (a, b) => new Date(a.date).getTime() - new Date(b.date).getTime()
+    );
     const expByDate = {};
     this.expenses.forEach((expense) => {
       if (expByDate[expense.date]) {
-        expByDate[expense.date] += expense.amount; 
+        expByDate[expense.date] += expense.amount;
       } else {
         expByDate[expense.date] = expense.amount;
       }
@@ -60,6 +61,15 @@ export class BudgetDashboardComponent implements OnInit {
 
     //Bar chart
     const barCtx = document.getElementById('chart1') as HTMLCanvasElement;
+    const colors = [
+      '#0b1d78',
+      '#008ac5',
+      '#1fe074',
+      '#0045a5',
+      '#0069c0',
+      '#00a9b5',
+      '#00c698',
+    ];
     new Chart(barCtx, {
       type: 'bar',
       data: {
@@ -68,8 +78,8 @@ export class BudgetDashboardComponent implements OnInit {
           {
             label: 'Amount',
             data: Object.values(combinedData),
-            backgroundColor: '#008ac5',
-            borderColor: '#008ac5',
+            backgroundColor: colors,
+            // borderColor: '#008ac5',
             hoverBackgroundColor: '#0045a5',
             borderWidth: 1,
             borderRadius: 10,
@@ -83,21 +93,29 @@ export class BudgetDashboardComponent implements OnInit {
           },
           title: {
             display: true,
-            text: 'Expenses by Category'
-          }
+            text: 'Expenses by Category',
+          },
         },
         scales: {
           x: {
-            display: false,
+            stacked: false,
           },
         },
-      }
+      },
     });
 
     //Pie chart
     const pieCtx = document.getElementById('chart2') as HTMLCanvasElement;
 
-    const colorScheme = ['#0b1d78', '#008ac5', '#1fe074', '#0045a5', '#0069c0', '#00a9b5', '#00c698'];
+    const colorScheme = [
+      '#0b1d78',
+      '#008ac5',
+      '#1fe074',
+      '#0045a5',
+      '#0069c0',
+      '#00a9b5',
+      '#00c698',
+    ];
 
     new Chart(pieCtx, {
       type: 'pie',
@@ -116,10 +134,10 @@ export class BudgetDashboardComponent implements OnInit {
         plugins: {
           title: {
             display: true,
-            text: 'Expenses by Payment Method'
-          }
-        }
-      }
+            text: 'Expenses by Payment Method',
+          },
+        },
+      },
     });
 
     //Line chart
@@ -153,8 +171,8 @@ export class BudgetDashboardComponent implements OnInit {
           },
           title: {
             display: true,
-            text: 'Expenses by Date'
-          }
+            text: 'Expenses by Date',
+          },
         },
         scales: {
           x: {
