@@ -1,31 +1,84 @@
+
 # ExpenseTracker
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.5.
+## Project Overview
+ExpenseTracker is a full-stack web application designed to help users manage their personal finances. It allows users to track their expenses, categorize spending, and view analytics for effective budgeting. The front-end is developed using Angular, while the back-end is powered by Express.
 
-## Development server
+## Features
+- **Expense Management:** Add, edit, and delete expenses.
+- **Categorization:** Organize expenses by categories for better tracking.
+- **Analytics:** View summary charts and analytics for budgeting insights.
+- **User-Friendly Design:** A responsive and intuitive interface.
 
-**Run `npm install` to install both Angular and Express dependencies**
+## Prerequisites
+- Node.js and npm installed on your system.
 
-**Run `npm start` to simultaneously start the Express server and well as the serve the Angular project**
+## Getting Started
 
-[//]: # (Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.)
+### 1. Clone the Repository
+```sh
+git clone <repository-url>
+cd ExpenseTracker-master
+```
 
-## Code scaffolding
+### 2. Install Dependencies
+```sh
+npm install
+```
+This will install both Angular and Express dependencies.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+### 3. Run the Application
+```sh
+npm start
+```
+This command will start both the Angular development server and the Express server concurrently. Open your browser and navigate to `http://localhost:4200/` to access the application.
 
-## Build
+## Development
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+### Development Server
+To run a development server, use the following command:
+```sh
+ng serve
+```
+Navigate to `http://localhost:4200/`. The application will automatically reload if you make any changes to the source files.
 
-## Running unit tests
+### Code Scaffolding
+Run `ng generate component component-name` to generate a new component. You can also use:
+- `ng generate directive|pipe|service|class|guard|interface|enum|module` for other scaffolding options.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Building the Project
+Run the following command to build the project:
+```sh
+ng build
+```
+The build artifacts will be stored in the `dist/` directory.
 
-## Running end-to-end tests
+## Testing
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+### Running Unit Tests
+Run `ng test` to execute unit tests via [Karma](https://karma-runner.github.io).
 
-## Further help
+### Running End-to-End Tests
+To execute end-to-end tests, use:
+```sh
+ng e2e
+```
+Ensure that you add a package that implements end-to-end testing capabilities before running this command.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## Technologies Used
+- **Front-end:** Angular
+- **Back-end:** Express.js
+- **Styling:** SASS, Bootstrap
+
+## Contributing
+Contributions are welcome! If you want to contribute, please fork the repository and submit a pull request. For significant changes, please open an issue first to discuss the proposed changes.
+
+## License
+This project is licensed under the MIT License.
+
+## Further Help
+For more help with Angular CLI, use:
+```sh
+ng help
+```
+or visit the [Angular CLI Overview and Command Reference](https://angular.io/cli).
